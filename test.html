@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<body>
+		<head>
+			<title>The Letters Limitless Technologies</title>
+			<link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/styleindex.css">
+		
+		</head>
+        <div class="body">
+		    <div class="header"> 
+		
+			    <img src="images/Logo-The Letters Limitless.png" class="logo" >
+				<compn>THE LETTERS LIMITLESS</compn>
+				
+				<img src="assets/call-icon-24.png" class="p-icon" >
+				<hf3>+254 (704) 060-301</hf3>
+				<img src="assets/whatsapp-icon-24.png" class="w-icon" >
+				<hf3> +254 (707) 402-377</h3>
+				<img src="assets/email-icon-24.png" class="e-icon" >
+				<hf3>theletters.tech@gmail.com</hf3>
+			        <marquee>
+				<button class="sign" id="signinbtn" type="button">Sign in </button>
+				<button class="sign" id="signupbtn" type="button">Sign up </button> 
+                    </marquee> 
+				 
+		    </div>
+ <h1>PLEASE ASSIST ME ON HOW TO CLOSE THE POPUP THAT APPEAR <br> AFTER CLICKING SIGNIN/SIGNUP BUTTONS; <br> BY CLICKING OUTSIDE THE BOX.</h1>
+			
+			
+	        <div class="signupform">
+			    
+			    <div class="form-element">
+				<input class="close-btn" type="image" src="assets/Close-button.png">
+				</div>
+				<h4> Register with us!</h4>
+				<div class="form-element">
+				 <label>Name</label>
+				 <input type="text" id="input-t" placeholder="First Name" required="required">
+				</div>
+				<div class="form-element">
+				 <input type="text" id="input-t" placeholder="Second Name" required="required">
+				</div>
+				<div class="form-element">
+				<label>Email</label>
+				 <input type="email" id="input-t" placeholder="Email" required="required">
+				</div>
+				<div class="form-element">
+				<label>Create Password</label>
+				 <input type="password" id="input-t" placeholder="Password" required="required">
+				</div>
+				<div class="form-element">
+				<label>Confirm Password</label>
+				 <input type="password" id="input-t" placeholder="Password" required="required">
+				</div>
+				<div class="form-element" id="submit">
+				<button> Register</button>
+				</div>
+				
+			
+			</div>
+			
+			<div class="signinform">
+			    
+			    <div class="form-element">
+				<input class="close-btn" type="image" src="assets/Close-button.png">
+				</div>
+				<h4> Log in</h4>
+				<div class="form-element">
+				 
+				<div class="form-element">
+				<label>Email</label>
+				 <input type="email" id="input-t" placeholder="Email" required="required">
+				</div>
+				<div class="form-element">
+				<label>Password</label>
+				 <input type="password" id="input-t" placeholder="Password" required="required">
+				</div>
+				<div class="form-element">
+				<a id="link1" href="pages/reset.html"> Forgot Password?</a>
+				<a id="link2" href="#"> Already have account</a>
+				<button class="login-submit"> Log in</button>
+				</div>
+				
+			
+			</div>
+			
+		 
+		</div>
+        
+		
+		<script>
+			document.querySelector("#signupbtn").addEventListener("click",function(){
+	        document.querySelector(".signupform").style.display="block";
+           })
+            document.querySelector(".close-btn") .addEventListener("click",function(){
+	        document.querySelector(".signupform").style.display="none";
+           })
+		   
+		   document.querySelector("#signinbtn").addEventListener("click",function(){
+	        document.querySelector(".signinform").style.display="block";
+           })
+            document.querySelector(".signinform .close-btn") .addEventListener("click",function(){
+	        document.querySelector(".signinform").style.display="none";
+           })
+		   document.querySelector(".close-popups") .addEventListener("click",function(){
+	        document.querySelector(".signinform").style.display="none";
+           })
+		   
+	    </script>
+     
+
+
+</body>
